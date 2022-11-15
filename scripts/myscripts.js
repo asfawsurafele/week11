@@ -22,9 +22,22 @@
 // greeting()
 // METHOD 3 IS UNHOISTABLE
 
-function greet(name, time = 'Day'){
-    console.log(`Good ${time} ${name}`);
+// //Default Parameters for Functi
+// function greet(name, time = 'Day'){
+//     console.log(`Good ${time} ${name}`);
+// }
+// greet('Surafele')
+// greet('Surafele', 'Night',)
+// // greet(`Surafele`);
+let r = prompt('Enter a radius:');
+console.log(r)
+
+function circleArea (radius)
+{
+    return Math.PI * radius * radius;
 }
-greet('Surafele')
-greet('Surafele', 'Night', 'hi')
-// greet(`Surafele`);
+
+
+let area = circleArea(r);
+
+alert(`The area: ${area.toFixed(2)}`);
